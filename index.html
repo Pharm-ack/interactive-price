@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Interactive pricing component</title>
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <div class="header-title">
+      Simple, traffic-based pricing
+    </div>
+    <div class="header-subtitle">
+      Sign-up for our 30-day trial. No credit card required.
+    </div>
+  </div>
+  <div class="box-wrapper">
+    <div class="box-top">
+      <p class="text-uppercase">
+        <span id="output-number"></span>&nbsp;Pageviews
+      </p>
+
+      <div class="price">
+        <span class="price-text" id="output-price"></span>
+        <span class="month">/ month</span>
+      </div>
+    </div>
+    <div class="range">
+      <input type="range" min="0" max="4" step="1" value="2" class="slide-range" id="slider" aria-label="Slider" />
+    </div>
+    <div class="billing">
+      <p>Monthly Billing</p>
+      <button class="billing-toggle">
+        <div class="inner-circle"></div>
+      </button>
+      <p>Yearly Billing</p>
+      <div class="yearly-billing">
+        <p class="billing-round--desktop">25%&nbsp;discount</p>
+      </div>
+    </div>
+  </div>
+  <hr />
+  <div class="bottom-box">
+    <div class="bottom-unlimited">
+      <li>Unlimited websites</li>
+      <li>100% data ownership</li>
+      <li>Email reports</li>
+    </div>
+    <div class="bottom-trial">
+      <span>Start my trial</span>
+    </div>
+  </div>
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#"> Pharmack</a>.
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>
